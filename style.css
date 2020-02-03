@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+h1{
+	list-style: none;
+	font-family: 'Lobster Two', cursive;
+	margin-top: 4%;
+}
+h1:hover{
+	font-size: 0;
+}
+h1:hover:after{
+	content: attr(data-hover);
+	font-size: 32;
+	color: red;
+}
+body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-image: url(animal-dawn-desktop-backgrounds-875858.jpg);
+}
+#particles-js{
+	height: 100%;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+
+}
+.particles-js-canvas-el{
+	position: absolute;
+}
+p{
+	align-content: center;
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	color: red;
+}
+p:hover{
+	color: white;
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+	text-decoration-style: solid;
+}
+u1{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	position: absolute;
+	top: 10%;
+	left: 71%;
+	transform: translate(-50%, -50%);
+}
+u1 li{
+	list-style: none;
+	margin: 0 65px;
+
+}
+u1 li b{
+	position: relative;
+	display: block;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 70px;
+	background: #333;
+	border-radius: 70%;
+	font-size: 30px;
+	color: #666;
+	transition: .5s;
+}
+u1 li b:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: #ffee10;
+	transition: .5s;
+	transform: scale(.9);
+	z-index: -1;
+
+}
+u1 li b:hover:before{
+	transform: scale(1.1);
+	box-shadow: 0 0 15px #ffee10;
+}
+u1 li b:hover{
+	color: #ffee10;
+	box-shadow: 0 0 5px #ffee10;
+	text-shadow: 0 0 5px #ffee10;
+}
